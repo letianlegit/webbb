@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="C:\Users\20162\Desktop\2021102718_---_---\" target="_blank">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript"> <!--为搜索引擎定义关键词-->
+    <meta name="description" content="免费 Web & 编程 教程"> <!--为网页定义描述内容-->
+    <meta name="author" content="chen"> <!--定义网页作者-->
+
+    <style type="text/css">
+        p{
+            background-color: aliceblue;
+        }
+        body{
+            background-color: white;
+            color:black;
+        }
+    </style>
+    <title>demo2</title>
+</head>
+<body>
+    <a href="#op">访问名为op的id的地方</a>
+    <p id="op">访问点</p>
+    <a href="http://www.baidu.com/" target="_top">跳出框架</a>
+    <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+        发送邮件, 注意要有mailto:, 并且单词之间空格使用 %20 代, 以确保浏览器可以正常显示文本。</a>
+    <div><img src="photo.png" width="100" height="100" alt="图片"></div>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <caption>单元格边距为10, 单元格间距为0的表的标题</caption>
+        <tr>
+            <th>表头h1</th>
+            <th colspan="2">单元格跨两列</th>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>123</td>
+            <td rowspan="2">单元格跨两列行</td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>123</td>
+        </tr>
+    </table>
+    <ul>
+        <li>无序列表</li>
+        <li>2</li>
+    </ul>
+    <ol>
+        <li>有序列表</li>
+        <li>2</li>
+    </ol>
+    <dl>
+        <dt>自定义列表</dt>
+            <dd>@ 12</dd>
+            <dd>@ 21</dd>
+        <dt>自定义列表</dt>
+            <dd>$ 123</dd>
+            <dd>$ 231</dd>
+    </dl>
+    <form action="" method="get">
+        <p>表单及输入:</p>
+        Username: <input type="text" name="user"><input type="submit" value="提交按钮"><br>
+        Password: <input type="password" name="password">
+    </form>
+    <form action="" >
+        <input type="radio" name="same" value="a">单选框的name要相同<br \>
+        <input type="radio" name="same" value="b">b
+    </form>
+    <form action="">
+        <input type="checkbox" name="same_same" value="a">复选框的name要相同<br \>
+        <input type="checkbox" name="same_same" value="b">b
+    </form>
+    <form action="">
+        <select name="下拉列表">
+            <optgroup label="选项组1">
+                <option value="vo">VO</option>
+                <option value="12">qwe</option>
+            </optgroup>
+            <optgroup label="选项组2">
+            <option value="mo" selected>默认选项是这个</option>
+            </optgroup>
+        </select>
+    </form>
+    <form>
+        <textarea rows="10" cols="20">文本域，用户可在文本域中写入文本。可写入字符的字数不受限制。</textarea>
+        <input type="button" value="按钮">
+    </form>
+</body>
+</html>

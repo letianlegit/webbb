@@ -1,0 +1,159 @@
+/*多重样式优先级:（内联样式）Inline style>（内部样式）Internal style sheet>
+（外部样式）External style sheet>浏览器默认样式*/
+
+/*CSS 中 id 选择器以 "#" 来定义*/
+#pa{
+    text-align:center;
+    color:red;
+}
+
+/*在 CSS 中，类选择器以一个点 . 号显示*/
+/*指定特定的 HTML 元素使用 class*/
+
+p.center{
+    text-align:center;/*文本对齐*/
+    text-indent: 50px;
+        /*文本缩进属性是用来指定文本的第一行的缩进。*/
+}
+
+.img{
+    background-color: #FFF;
+    /*默认情况下，背景图像进行平铺重复显示，以覆盖整个元素实体.*/
+    background-image: url(photo.png);
+    /*默认情况下 background-image 属性会在页面的水平或者垂直方向平铺。*/
+    background-repeat: repeat-x;/*图像只在水平方向平铺 (repeat-x)*, no-repeat为不平铺*/
+}
+
+/*可以将这些属性合并在同一个属性中. 背景颜色的简写属性为 "background"*/
+/*属性值的顺序为：: background-color background-image background-repeat background-attachment background-position*/
+.imgAbbr{
+    background: #FFF url(photo.png) no-repeat fixed right top;
+}
+
+a.text{
+    color:black;/*字体颜色*/
+    text-decoration:none;/*删除下划线*/
+    text-transform:uppercase;/*字母转换大写*/
+}
+
+.font{
+    font-size:200%;/*文字大小(百分比,em,px)*/
+    font-family:"Times New Roman",Times,serif; /*字体系列*/
+    font-style:italic;/*字体样式 主要是用于指定斜体文字的字体样式属性。*/
+
+}
+
+/*特别的链接，可以有不同的样式，这取决于他们是什么状态。这四个链接状态是： 
+    a:link - 正常，未访问过的链接 
+    a:visited - 用户已访问过的链接 
+    a:hover - 当用户鼠标放在链接上时 
+    a:active - 链接被点击的那一刻
+    注意：
+    a:hover 必须跟在 a:link 和 a:visited后面 
+    a:active 必须跟在 a:hover后面*/
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+a.one:link {
+    color: #ff0000;
+}
+
+a.one:visited {
+    color: #0000ff;
+}
+
+a.one:hover {
+    color: #ffcc00;
+}
+
+/* 不同的列表项标记 */
+/* list-style-type属性指定列表项标记 */
+ul.a {
+    list-style-type: circle;
+}
+
+ul.b {
+    list-style-type: square;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    list-style-type: lower-alpha;
+}
+
+/* 浏览器兼容性解决方案 */
+/*ul: 设置列表类型为没有列表项标记 
+    设置填充和边距 0px（浏览器兼容性） 
+    ul 中所有 li: 设置图像的 URL，
+    并设置它只显示一次（无重复） 
+    您需要的定位图像位置（左 0px 和上下 5px） 
+    用 padding-left 属性把文本置于列表中*/
+
+/*默认情况下列表 <ul>或 <ol>还设置了内边距和外边距，可使用 margin:0 和 padding:0 来移除*/
+ul.i {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.i li {
+    background-image: url(photo.png);
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+    padding-left: 14px;
+}
+
+/* 列表 - 简写属性 */
+/*可以按顺序设置如下属性： list-style-type list-style-position
+ (有关说明，请参见下面的CSS属性表) list-style-image*/
+ul {
+    list-style: square;
+}
+
+/* 指定CSS表格边框，使用border属性。 */
+/* 在下面的例子中的表格有双边框。这是因为表和th/ td元素有独立的边界。 */
+table, th, td{
+    border: 1px solid black; /*指定了一个表格的Th和TD元素的黑色边框 */
+}
+
+/*border-collapse 属性设置表格的边框是否被折叠成一个单一的边框或隔开*/
+table {
+    border-collapse: collapse;
+    width:10%;
+    height:10%;
+}
+
+td{
+    text-align:center;
+    vertical-align: bottom;/*垂直对齐属性设置垂直对齐，比如顶部，底部或中间*/
+    padding:15px;/*表格填充*/
+    
+}
+
+caption{
+    caption-side:bottom;
+}
+
+div{
+    width:300px;
+    border:20px solid gray;
+    padding:25px;
+    margin:25px;
+}

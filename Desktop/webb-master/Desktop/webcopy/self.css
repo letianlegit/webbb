@@ -1,0 +1,76 @@
+#para {
+    font-size: large;
+}
+
+div.eng {
+    font-size: smaller;
+    letter-spacing: -3px;
+}
+
+div.gk {
+        text-align: justify;
+        text-decoration: overline line-through underline;
+        text-transform: capitalize;
+        text-indent: 20px;
+        letter-spacing:10px;
+        line-height: 80%;
+        direction: ltr;
+        word-spacing: 20px;
+        white-space: nowrap;
+        vertical-align: text-bottom;
+        text-shadow: 2px 2px #000000;
+        font-family: "Times New Roman", 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: 30px;
+        font-weight: bold;
+        font-variant: normal;
+        font: italic bold 12px/30px Georgia, serif;
+}
+
+a:link{
+    color:#000000;
+    text-decoration: none;
+    background-color: #000000;
+}
+
+a:visited{
+    color:aliceblue;
+    text-decoration: underline;
+}
+
+a:hover{
+    color:aqua;
+}
+
+a:active{
+    color:bisque
+}
+
+ul{
+    list-style-type: circle;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li{
+    background-image: url(photo.png);
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+    padding-left: 14px;
+}
+
+ol.a{
+    list-style-type: upper-roman;
+}
+
+ol.b{
+    list-style-type: lower-alpha;
+}
+
+body {
+    color:white;
+    background:rgb(81, 81, 81) url(photo.png) no-repeat right top;
+    margin-right: 200px;
+    background-attachment: fixed;
+}
+
